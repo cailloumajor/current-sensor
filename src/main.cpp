@@ -37,7 +37,7 @@ void loopHandler()
 {
     unsigned long currentMillis = millis();
     if ((unsigned long)(currentMillis - lastMeasurement) >= (INTERVAL * 1000UL)
-        || lastMeasurement == 0) {
+        || (lastMeasurement == 0 && Homie.isConnected())) {
         float current = getVpp() / 2 / sqrt(2) / burdenResistorSetting.get() * 2000;
         Homie.getLogger() << "Current: " << current << " A" << endl;
         currentNode.setProperty("amperes").send(String(current, 1));
