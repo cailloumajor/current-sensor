@@ -3,7 +3,7 @@
 
 #define FIRMWARE_VERSION "1.0.0"
 
-const int INTERVAL = 5; // Measurement interval in seconds
+const int INTERVAL = 60; // Measurement interval in seconds
 
 unsigned long lastMeasurement = 0;
 
