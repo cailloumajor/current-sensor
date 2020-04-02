@@ -1,4 +1,3 @@
 {
-    "editor.formatOnSave": true,
-    "C_Cpp.clang_format_path": "/usr/lib/llvm-9/bin/clang-format"
+    "editor.formatOnSave": true
 }
